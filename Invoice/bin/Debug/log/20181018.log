@@ -1,0 +1,8 @@
+2018-10-18 17:13:33发票下达：
+{"message":{"place_code":"","operator":"admin","bill_details":[{"bill_code":"060103","bill_batch_code":"1314","copy_num":"10","bgn_no":"060101","end_no":"060109"}]}}
+2018-10-18 17:16:31发票下达：
+{"message":{"place_code":"","operator":"admin","bill_details":[{"bill_code":"060103","bill_batch_code":"1314","copy_num":"1","bgn_no":"060103","end_no":"060104"}]}}
+2018-10-18 17:28:06发票下达：
+{"message":{"place_code":"001","operator":"admin","bill_details":[{"bill_code":"060103","bill_batch_code":"1314","copy_num":"1","bgn_no":"00001","end_no":"00002"}]}}
+2018-10-18 17:28:28发票下达：
+{"message":{"place_code":"001","operator":"admin","bill_details":[{"bill_code":"060103","bill_batch_code":"1314","copy_num":"2","bgn_no":"00001","end_no":"00002"}]}}

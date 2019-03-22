@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63633869-BBBD-4A33-95CD-B71277CFF0DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Invoice</RootNamespace>
+    <AssemblyName>Invoice</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>house_48px_10868_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConvertJson.cs" />
+    <Compile Include="DynamicJsonConverter.cs" />
+    <Compile Include="frmfpddm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfpddm.Designer.cs">
+      <DependentUpon>frmfpddm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfph.Designer.cs">
+      <DependentUpon>frmfph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfpzf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfpzf.Designer.cs">
+      <DependentUpon>frmfpzf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFymc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFymc.Designer.cs">
+      <DependentUpon>FrmFymc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfpht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfpht.Designer.cs">
+      <DependentUpon>frmfpht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkjpjzybatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkjpjzybatch.Designer.cs">
+      <DependentUpon>frmkjpjzybatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkjpjbatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkjpjbatch.Designer.cs">
+      <DependentUpon>frmkjpjbatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkjpjzy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkjpjzy.Designer.cs">
+      <DependentUpon>frmkjpjzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkpsbxxsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkpsbxxsearch.Designer.cs">
+      <DependentUpon>frmkpsbxxsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkpxxbatchsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkpxxbatchsearch.Designer.cs">
+      <DependentUpon>frmkpxxbatchsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkpxxmxsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkpxxmxsearch.Designer.cs">
+      <DependentUpon>frmkpxxmxsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkpxxsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkpxxsearch.Designer.cs">
+      <DependentUpon>frmkpxxsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpjzftf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpjzftf.Designer.cs">
+      <DependentUpon>frmpjzftf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpjzf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpjzf.Designer.cs">
+      <DependentUpon>frmpjzf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpjImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpjImage.Designer.cs">
+      <DependentUpon>frmpjImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpjzt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpjzt.Designer.cs">
+      <DependentUpon>frmpjzt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZysfxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZysfxm.Designer.cs">
+      <DependentUpon>FrmZysfxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMzsfxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMzsfxm.Designer.cs">
+      <DependentUpon>FrmMzsfxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpjzh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpjzh.Designer.cs">
+      <DependentUpon>frmpjzh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpjxf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpjxf.Designer.cs">
+      <DependentUpon>frmpjxf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlyxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlyxx.Designer.cs">
+      <DependentUpon>frmlyxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkpd.Designer.cs">
+      <DependentUpon>frmkpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkjpj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkjpj.Designer.cs">
+      <DependentUpon>frmkjpj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpjxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpjxx.Designer.cs">
+      <DependentUpon>frmpjxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ini.cs" />
+    <Compile Include="Jbxx.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mode\AssistInfos.cs" />
+    <Compile Include="Mode\BatchKpxx.cs" />
+    <Compile Include="Mode\Bills.cs" />
+    <Compile Include="Mode\ComboboxItem.cs" />
+    <Compile Include="Mode\ErrorJson.cs" />
+    <Compile Include="Mode\Errormessage.cs" />
+    <Compile Include="Mode\ExtendInfos.cs" />
+    <Compile Include="Mode\Fply.cs" />
+    <Compile Include="Mode\FplyJson.cs" />
+    <Compile Include="Mode\Items.cs" />
+    <Compile Include="Mode\Kjfp.cs" />
+    <Compile Include="Mode\KjfpJson.cs" />
+    <Compile Include="Mode\NoticeInfos.cs" />
+    <Compile Include="Mode\Places.cs" />
+    <Compile Include="Mode\Success.cs" />
+    <Compile Include="Mode\SuccessJson.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelp.cs" />
+    <Compile Include="Tools.cs" />
+    <EmbeddedResource Include="frmfpddm.resx">
+      <DependentUpon>frmfpddm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfph.resx">
+      <DependentUpon>frmfph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfpzf.resx">
+      <DependentUpon>frmfpzf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFymc.resx">
+      <DependentUpon>FrmFymc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfpht.resx">
+      <DependentUpon>frmfpht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkjpjzybatch.resx">
+      <DependentUpon>frmkjpjzybatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkjpjbatch.resx">
+      <DependentUpon>frmkjpjbatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkjpjzy.resx">
+      <DependentUpon>frmkjpjzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkpsbxxsearch.resx">
+      <DependentUpon>frmkpsbxxsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkpxxbatchsearch.resx">
+      <DependentUpon>frmkpxxbatchsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkpxxmxsearch.resx">
+      <DependentUpon>frmkpxxmxsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkpxxsearch.resx">
+      <DependentUpon>frmkpxxsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpjzftf.resx">
+      <DependentUpon>frmpjzftf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpjzf.resx">
+      <DependentUpon>frmpjzf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpjImage.resx">
+      <DependentUpon>frmpjImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpjzt.resx">
+      <DependentUpon>frmpjzt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZysfxm.resx">
+      <DependentUpon>FrmZysfxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMzsfxm.resx">
+      <DependentUpon>FrmMzsfxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpjzh.resx">
+      <DependentUpon>frmpjzh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpjxf.resx">
+      <DependentUpon>frmpjxf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlyxx.resx">
+      <DependentUpon>frmlyxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkpd.resx">
+      <DependentUpon>frmkpd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkjpj.resx">
+      <DependentUpon>frmkjpj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpjxx.resx">
+      <DependentUpon>frmpjxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="accept.png" />
+    <Content Include="arrow_up.png" />
+    <Content Include="bin\Debug\agency3intfc.dll" />
+    <Content Include="bin\Debug\GetConn.dll" />
+    <Content Include="cross.png" />
+    <Content Include="CSkin.dll" />
+    <Content Include="CSkin.XML" />
+    <Content Include="disconnect.png" />
+    <Content Include="house_48px_10868_easyicon.net.ico" />
+    <Content Include="Newtonsoft.Json.dll" />
+    <None Include="ok.png" />
+    <None Include="Resources\soutu123.com_2655806_搜索关闭按钮_搜图123祝您工作顺利.png" />
+    <None Include="Resources\close.png" />
+    <Content Include="User_login_128px_500811_easyicon.net.png" />
+    <Content Include="关闭按钮.png" />
+    <Content Include="upload.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
